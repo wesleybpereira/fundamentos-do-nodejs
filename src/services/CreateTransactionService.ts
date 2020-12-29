@@ -25,9 +25,9 @@ class CreateTransactionService {
     }
 
     const transaction = this.transactionsRepository.create({
-      type,
       title,
       value,
+      type,
     });
     return transaction;
   }
